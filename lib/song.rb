@@ -7,7 +7,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    if !@@genre.include?(@genre) then @@genres << @genre end
+    @@genre << @genre
   end
 
   def count
