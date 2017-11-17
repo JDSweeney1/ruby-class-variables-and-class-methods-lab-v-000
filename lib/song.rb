@@ -26,6 +26,13 @@ class Song
     @@genres.uniq
   end
 
-  def atrists
+  def self.genre_count
+    genre_count = {}
+    @@genres.collect do |genre|
+      genre_count[genre] = "#{genre.counter}"
+        if genre_count.has_key?(genre)
+          genre.counter += 1 
+        end
+      end
   end
 end
