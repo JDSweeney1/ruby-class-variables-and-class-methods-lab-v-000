@@ -31,7 +31,7 @@ class Song
     @@genres.collect do |genre|
       genre_count[genre] = "#{genre.counter}"
         if genre_count.has_key?(genre)
-          genre.counter += 1 
+          genre.counter += 1
         end
       end
   end
