@@ -29,9 +29,9 @@ class Song
   def self.genre_count
     genre_count = {}
     @@genres.collect do |genre|
-      genre_count[genre] = "#{genre.counter}"
+      genre_count[genre] = "#{genre}"_counter
         if genre_count.has_key?(genre)
-          genre.counter += 1
+        "#{genre}"_counter += 1
         end
       end
   end
