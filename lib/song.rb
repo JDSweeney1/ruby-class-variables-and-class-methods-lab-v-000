@@ -18,9 +18,6 @@ class Song
     @@count
   end
 
-  def genre
-    @@genres.uniq
-  end
 
   def atrists
   end
